@@ -122,6 +122,7 @@ while True:  # code running loop
   print_lifegrid()  # printing grid
 
   for i in range(grid_size**2):
-    life_grid[i] = update_cell(i, life_grid, life_grid)  # check and update each cell
+    life_grid[i] = update_cell(i, life_grid,
+                               life_grid)  # check and update each cell
 
   time.sleep(generation_time)  # wait
